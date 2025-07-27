@@ -1,5 +1,5 @@
 <header class="app-header">
-  <div class="logo-container">
+  <div routerLink="/home" class="logo-container">
     <img src="../../../assets/logo.jpeg" alt="Logo" class="logo" />
     <span class="logo-text">Rice Mill</span>
   </div>
@@ -50,6 +50,14 @@
       [routerLinkActiveOptions]="{ exact: true }"
       (click)="closeMenu()"
       >Product</a
+    >
+
+    <a
+      routerLink="/about"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      (click)="closeMenu()"
+      >About Us</a
     >
 
     <a

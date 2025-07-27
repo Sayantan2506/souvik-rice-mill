@@ -1,0 +1,40 @@
+<mat-card class="contact-card">
+  <h2>Contact Us</h2>
+  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Name</mat-label>
+      <input matInput name="name" [(ngModel)]="contactData.name" required />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        name="email"
+        type="email"
+        [(ngModel)]="contactData.email"
+        required
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Phone</mat-label>
+      <input matInput name="phone" type="tel" [(ngModel)]="contactData.phone" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Message</mat-label>
+      <textarea
+        matInput
+        name="message"
+        rows="4"
+        [(ngModel)]="contactData.message"
+        required
+      ></textarea>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">
+      Send Message
+    </button>
+  </form>
+</mat-card>

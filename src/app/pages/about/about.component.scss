@@ -1,0 +1,28 @@
+.about-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  mat-card-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      padding: 6px 0;
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
