@@ -7,18 +7,26 @@ export const appRoutes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'product', component: ProductComponent },
-  {
-    path: 'about',
-    loadComponent: () =>
-      import('./pages/about/about.component').then((m) => m.AboutComponent),
-  },
+  { path: 'about', component: ProductComponent },
+  { path: 'product', component: ProductComponent },
+  // {
+  //   path: 'product',
+  //   loadComponent: () =>
+  //     import('./pages/product/product.component').then((m) => m.ProductComponent),
+  // },
 
-  {
-    path: 'contact',
-    loadComponent: () =>
-      import('./pages/contact/contact.component').then(
-        (m) => m.ContactComponent
-      ),
-  },
+  // {
+  //   path: 'about',
+  //   loadComponent: () =>
+  //     import('./pages/about/about.component').then((m) => m.AboutComponent),
+  // },
+
+  // {
+  //   path: 'contact',
+  //   loadComponent: () =>
+  //     import('./pages/contact/contact.component').then(
+  //       (m) => m.ContactComponent
+  //     ),
+  // },
   { path: '**', redirectTo: '/home' },
 ];
